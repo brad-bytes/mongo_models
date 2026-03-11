@@ -1,0 +1,32 @@
+{
+  "name": "mongo_models",
+  "version": "1.0.0",
+  "description": "> Scott Moss & Frontend Masters",
+  "main": "crud.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "mongoose": "^9.2.4"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "jest-html-reporter": "^4.3.0",
+    "mongodb-memory-server": "^11.0.1"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporter",
+        {
+          "outputPath": "test-report.html"
+        }
+      ]
+    ]
+  }
+}
